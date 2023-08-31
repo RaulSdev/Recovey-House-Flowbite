@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <!--Navbar Start-->
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0  left-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo">
@@ -58,7 +59,7 @@
 <body>
     <main>
         <!--Jumbo Start-->
-        <section
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50"
             class="bg-center bg-no-repeat bg-cover bg-[url('/img/mujer-relajada.jpg')] bg-gray-700 bg-blend-multiply">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1
@@ -88,7 +89,8 @@
         <!--Jumbo end-->
 
         <!--About Start-->
-        <section id="about" class="bg-white dark:bg-gray-900">
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50" id="about"
+            class="bg-white dark:bg-gray-900">
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
                 data-aos="fade-down">
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -117,7 +119,7 @@
         <!--About End-->
 
         <!--Ubicacion Start-->
-        <section class="bg-white dark:bg-gray-900">
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50" class="bg-white dark:bg-gray-900">
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2
@@ -145,7 +147,8 @@
         <!--Ubicacion End-->
 
         <!--Suites Start-->
-        <section id="suites" class="bg-white dark:bg-gray-900">
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50" id="suites"
+            class="bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div class="text-center text-gray-900">
                     <h2
@@ -188,7 +191,7 @@
         <!--Suites End-->
 
         <!--Suites info start-->
-        <section class="bg-white dark:bg-gray-900">
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50" class="bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto space-y-12 max-w-screen-xl lg:space-y-20 sm:py-16 lg:px-6">
                 <!-- Row -->
                 <div class="gap-8 items-center lg:grid lg:grid-cols-2 xl:gap-16">
@@ -479,7 +482,7 @@
         <!--Suites info End-->
 
         <!--Instalaciones Start-->
-        <section class="bg-white dark:bg-gray-900">
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50" class="bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-12 sm:text-center lg:py-16">
                 <h2
                     class="mb-4 text-4xl text-center tracking-tight uppercase font-extrabold text-gray-900 dark:text-white">
@@ -503,7 +506,7 @@
         <!--Instalacion END-->
 
         <!--Nutricion Start-->
-        <section class="bg-white dark:bg-gray-900">
+        <section data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="50" class="bg-white dark:bg-gray-900">
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2
@@ -618,7 +621,7 @@
         <!-- Testimonials END-->
 
         <!--Transport Start-->
-        <section id="#transporte" class="bg-white dark:bg-gray-900" data-aos="fade-left" data-aos-easing="ease-in"
+        <section id="#transporte" class="bg-white dark:bg-gray-900" data-aos="fade-up" data-aos-easing="ease-in"
             data-aos-delay="50">
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -695,7 +698,7 @@
         <!--terapia END-->
 
         <!--Belleza Start-->
-        <section class="bg-white dark:bg-gray-900" data-aos="fade-left" data-aos-easing="ease-in" data-aos-delay="50">
+        <section class="bg-white dark:bg-gray-900" data-aos="fade-up" data-aos-easing="ease-in" data-aos-delay="50">
             <div class="py-8 px-4 mx-auto space-y-12 max-w-screen-xl lg:space-y-20 sm:py-16 lg:px-6">
 
                 <!-- Row -->
@@ -836,6 +839,10 @@
     <!--Scripts-->
 
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
     <!--Scripts End-->
